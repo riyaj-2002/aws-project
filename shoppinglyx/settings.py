@@ -135,7 +135,7 @@ LOGIN_REDIRECT_URL = '/profile/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 
-from decouple import config
+'''from decouple import config
 
 # Load environment variables
 PAYPAL_CLIENT_ID = config('PAYPAL_CLIENT_ID')
@@ -143,4 +143,4 @@ PAYPAL_CLIENT_ID = config('PAYPAL_CLIENT_ID')
 def global_settings_env_var(request):
     return {
         'PAYPAL_CLIENT_ID': config('PAYPAL_CLIENT_ID', default='Default Value')
-    }
+    }   '''
