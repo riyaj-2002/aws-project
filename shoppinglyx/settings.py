@@ -118,7 +118,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = '/root/djangoproject/app/static/app/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -144,3 +144,10 @@ def global_settings_env_var(request):
     return {
         'PAYPAL_CLIENT_ID': config('PAYPAL_CLIENT_ID', default='Default Value')
     }   '''
+
+
+import os
+
+BASE_DIR = /root/djangoproject/
+STATIC_ROOT = /root/djangoproject(BASE_DIR, 'staticfiles')
+
