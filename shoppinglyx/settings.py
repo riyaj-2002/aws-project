@@ -148,6 +148,5 @@ def global_settings_env_var(request):
 
 import os
 
-BASE_DIR = /root/djangoproject/
-STATIC_ROOT = /root/djangoproject(BASE_DIR, 'staticfiles')
-
+BASE_DIR = '/root/djangoproject'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
